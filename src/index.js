@@ -1,4 +1,4 @@
-import getContent from './parser.js';
+import getFileInfo from './parser.js';
 import buildTree from './buildTree.js';
 import _ from 'lodash';
 
@@ -28,8 +28,8 @@ const filterDifference = (notSortedTree) => {
 
 const genDiff = (filePath1, filePath2) => {
 
-  const file1DataParsed = getContent(filePath1);
-  const file2DataParsed = getContent(filePath2);
+  const file1DataParsed = getFileInfo(filePath1);
+  const file2DataParsed = getFileInfo(filePath2);
   const unformedTree = buildTree(file1DataParsed, file2DataParsed);
 
   return filterDifference(unformedTree);
