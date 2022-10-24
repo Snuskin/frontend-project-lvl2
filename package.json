@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Difference Calculator",
+  "description": "Difference Calculator. HEXLET frontend-developer project lvl-2",
   "main": "src/index.js",
   "dependencies": {
     "commander": "^9.4.1",

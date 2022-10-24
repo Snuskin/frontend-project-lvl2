@@ -2,7 +2,7 @@ import genDiff from '../src/index.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
-import { readFile, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
