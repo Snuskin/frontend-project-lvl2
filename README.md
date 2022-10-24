@@ -10,4 +10,4 @@
 
 ### Linter Badge:
 
-[![Lint](https://github.com/Snuskin/frontend-project-lvl2/workflows/lint.yml/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions)
+[![lint](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml)
