@@ -7,4 +7,4 @@
 <a href="https://codeclimate.com/github/Snuskin/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/test_coverage" /></a>
 
 ### Linter Badge:
-[![lint](https://github.com/Snuskin/frontend-project-lvl2/workflows/Build%20and%20Test/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions)
+[![lint](https://github.com/Snuskin/frontend-project-lvl2/workflows/make-lint/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions)
