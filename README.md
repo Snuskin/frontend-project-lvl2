@@ -11,3 +11,7 @@
 ### Linter Badge:
 
 [![lint](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml)
+
+### Project Demonstration:
+
+[![asciicast](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T.svg)](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T)
