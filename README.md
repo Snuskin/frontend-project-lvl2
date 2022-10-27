@@ -15,3 +15,7 @@
 ### Project Demonstration:
 
 [![asciicast](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T.svg)](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T)
+
+### Project Demonstration with nested files:
+
+[![asciicast](https://asciinema.org/a/UnR8C1qBy9BNQj46YQIl2ZYRa.svg)](https://asciinema.org/a/UnR8C1qBy9BNQj46YQIl2ZYRa)

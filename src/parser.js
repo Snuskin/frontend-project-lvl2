@@ -10,7 +10,8 @@ const getFileInfo = (file) => {
   const fileExtname = getFileExtname(file);
   const fileData = readFileSync(absolutePath, 'utf8');
   return getContent(fileData, fileExtname);
-}
+};
+
 const getContent = (file, extension) => {
     switch (extension) {
         case 'json':

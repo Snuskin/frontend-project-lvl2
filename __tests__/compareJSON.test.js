@@ -11,7 +11,11 @@ const fitxtureJSONFilePath = getFixturePath('compareJSON.txt');
 const expectedJSONResult = readFileSync(fitxtureJSONFilePath, 'utf8');
 const fitxtureYAMLFilePath = getFixturePath('compareYAML.txt');
 const expectedYAMLResult = readFileSync(fitxtureYAMLFilePath, 'utf8');
+const fitxtureNestedFilePath = getFixturePath('compareStylish.txt');
+const expectedNestedResult = readFileSync(fitxtureNestedFilePath, 'utf8');
+
 test('genDiff', () => {
     expect(genDiff('__fixtures__/file1.json', '__fixtures__/file2.json')).toEqual(expectedJSONResult);
     expect(genDiff('__fixtures__/file1.yml', '__fixtures__/file2.yml')).toEqual(expectedYAMLResult);
+    expect(genDiff('__fixtures__/BigFile1.yml', '__fixtures__/BigFile2.json')).toEqual(expectedNestedResult);
   });

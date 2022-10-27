@@ -11,7 +11,7 @@ program
     .argument("<filepath1>")
     .argument("<filepath2>")
     .action((filepath1, filepath2) => {
-        const difference = genDiff(filepath1, filepath2);
+        const difference = genDiff(filepath1, filepath2, program.opts().format);
         console.log(difference);
     });
 program.parse();
