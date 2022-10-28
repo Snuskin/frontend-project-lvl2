@@ -12,6 +12,12 @@
 
 [![lint](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions/workflows/lint.yml)
 
+## How to install:
+1. Make sure you have installed [Node.js](https://nodejs.org/en/) no lower version 12: ```node -v```.
+2. Clone repository: ```git@github.com:pterodactylsam/frontend-project-lvl2.git```.
+3. Change directory to frontend-project-lvl2
+4. Run the command: ```make install```.
+
 ### Project Demonstration:
 
 [![asciicast](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T.svg)](https://asciinema.org/a/9XyNNLXWFyYZsBfriWN0cc41T)
@@ -23,3 +29,7 @@
 ### Project Demonstration with plain output: 
 
 [![asciicast](https://asciinema.org/a/9Qj5JxsqmjhicDjYkkuQb2eGQ.svg)](https://asciinema.org/a/9Qj5JxsqmjhicDjYkkuQb2eGQ)
+
+### Project Demonstration with plain output:
+
+[![asciicast](https://asciinema.org/a/1lWbhJdaOA3JStIQNLPyVWaVG.svg)](https://asciinema.org/a/1lWbhJdaOA3JStIQNLPyVWaVG)

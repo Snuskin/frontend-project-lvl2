@@ -6,3 +6,10 @@ lint:
 	npx eslint .
 install:
 	npm ci
+	nmp link
+test: 
+	npm test
+test-watch:
+	npm test -s -- --watch
+test-coverage: 
+	npm test -- --coverage --coverageProvider=v8
