@@ -9,7 +9,7 @@ const genDiff = (filePath1, filePath2, format = 'stylish') => {
   const file2DataParsed = getFileInfo(filePath2);
   const unformedTree = buildTree(file1DataParsed, file2DataParsed);
 
-  return formatter(unformedTree);
+  return formatter(unformedTree, format);
 };
 
 export default genDiff;

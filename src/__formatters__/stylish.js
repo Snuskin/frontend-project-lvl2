@@ -10,7 +10,7 @@ const stringify = (data, depth, replacer = ' ') => {
   const indentForKey = replacer.repeat(depth + 1)
   const bracketIdent = replacer.repeat(depth);
   const massiveValue = Object.entries(data);
-  const lines = massiveValue.map(([key, value]) => `${indentForKey}${key}: ${stringify(value, depth + 1)}`);
+  const lines = massiveValue.map(([key, value]) => `${indentForKey}${key}: ${stringify(value, depth + 1, replacer)}`);
   
   return ['{', ...lines, `${bracketIdent}}`].join('\n'); 
     
@@ -38,8 +38,8 @@ const stylish = (difference, replacer = '    ') => {
       case 'notChanged':
         return makeLine (node.beforeValue, sign.notChanged); 
       case 'changed':
-        return [`${makeLine (node.beforeValue, sign.deleted)}`,
-        `${makeLine (node.afterValue, sign.added)}`].join('\n');
+        return [`${makeLine(node.beforeValue, sign.deleted)}`,
+        `${makeLine(node.afterValue, sign.added)}`].join('\n');
       case 'nested':
         return `${indent}${node.key}: ${['{', ...iter(node.children, depth + 1), `${indent}}`].join('\n')}`;
       default:

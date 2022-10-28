@@ -2,11 +2,11 @@
 
 ### Maintainability Badge:
 
-<a href="https://codeclimate.com/github/Snuskin/frontend-project-lvl2/maintainability"><img src="https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/maintainability)](https://codeclimate.com/github/Snuskin/frontend-project-lvl2/maintainability)
 
 ### Test coverage Badge:
 
-<a href="https://codeclimate.com/github/Snuskin/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/test_coverage" /></a>
+[![Test Coverage](https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/test_coverage)](https://codeclimate.com/github/Snuskin/frontend-project-lvl2/test_coverage)
 
 ### Linter Badge:
 
@@ -19,3 +19,7 @@
 ### Project Demonstration with nested files:
 
 [![asciicast](https://asciinema.org/a/UnR8C1qBy9BNQj46YQIl2ZYRa.svg)](https://asciinema.org/a/UnR8C1qBy9BNQj46YQIl2ZYRa)
+
+### Project Demonstration with plain output: 
+
+[![asciicast](https://asciinema.org/a/9Qj5JxsqmjhicDjYkkuQb2eGQ.svg)](https://asciinema.org/a/9Qj5JxsqmjhicDjYkkuQb2eGQ)
