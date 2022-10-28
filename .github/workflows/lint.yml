@@ -13,7 +13,7 @@ jobs:
         with: 
           node-version: '17.9.0'
       - name: Istall dependencies 
-        run: npm ci
+        - run: npm ci
       - name: Run linter and tests
         - run: make install
         - run: make lint
