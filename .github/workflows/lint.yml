@@ -14,5 +14,12 @@ jobs:
           node-version: '17.9.0'
       - name: Istall dependencies 
         run: npm ci
-      - name: Run linter
+      - name: Run linter and tests
         run: make lint
+        run: make test
+      - uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: yarn run coverage
+          debug: true

@@ -14,9 +14,21 @@
 
 ## How to install:
 1. Make sure you have installed [Node.js](https://nodejs.org/en/) no lower version 12: ```node -v```.
-2. Clone repository: ```git@github.com:pterodactylsam/frontend-project-lvl2.git```.
+2. Clone repository: ```git@github.com:Snuskin/frontend-project-lvl2.git```.
 3. Change directory to frontend-project-lvl2
 4. Run the command: ```make install```.
+
+## How to use:
+You can use the project as a script in the terminal or as a library in your JavaScript project. You can format the difference in three styles: stylish (default), plain and json.
+```shell
+$ gendiff -h
+Usage: gendiff [options] <filepath1> <filepath2>
+Compares two configuration files and shows a difference.
+Options:
+  -V, --version          output the version number
+  -f, --format <type>    output format (choices: "stylish", "plain", "json", default: "stylish")
+  -h, --help             display help for command
+```
 
 ### Project Demonstration:
 
