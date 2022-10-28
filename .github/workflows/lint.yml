@@ -15,7 +15,6 @@ jobs:
       - name: Istall dependencies 
         run: npm ci
       - name: Run linter and tests
-        cache: 'npm':
         - run: make install
         - run: make lint
         - run: make test
