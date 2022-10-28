@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v2
         with: 
           node-version: '17.9.0'
-          
+
       - name: Istall dependencies 
         - run: npm ci
 
@@ -22,7 +22,7 @@ jobs:
         - run: make test
       - uses: paambaati/codeclimate-action@v3.0.0
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: 95b4a07ce2eded48123fbc39d260d8cf0ba67ce9207cd7b832a7c810531108ae
         with:
           coverageCommand: make test-coverage
           debug: true
