@@ -1,3 +1,4 @@
+# Name of workflow
 name: Node CI
 
 # Trigger the workflow on push or pull request
@@ -40,8 +41,8 @@ jobs:
       #   # https://github.com/paambaati/codeclimate-action
         uses: paambaati/codeclimate-action@v3.0.0
       #   # Add Code Climate secret key
-        env:
-          CC_TEST_REPORTER_ID: 95b4a07ce2eded48123fbc39d260d8cf0ba67ce9207cd7b832a7c810531108ae
-        with:
-          coverageCommand: make test-coverage
-          debug: true
+         env:
+           CC_TEST_REPORTER_ID: 95b4a07ce2eded48123fbc39d260d8cf0ba67ce9207cd7b832a7c810531108ae
+         with:
+           coverageCommand: make test-coverage
+           debug: true
