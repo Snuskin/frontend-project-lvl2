@@ -15,8 +15,10 @@ jobs:
       - name: Istall dependencies 
         run: npm ci
       - name: Run linter and tests
-        run: make lint
-        run: make test
+        cache: 'npm':
+        - run: make install
+        - run: make lint
+        - run: make test
       - uses: paambaati/codeclimate-action@v3.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
