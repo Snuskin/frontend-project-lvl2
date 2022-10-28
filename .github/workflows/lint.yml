@@ -12,8 +12,10 @@ jobs:
         uses: actions/setup-node@v2
         with: 
           node-version: '17.9.0'
+          
       - name: Istall dependencies 
         - run: npm ci
+
       - name: Run linter and tests
         - run: make install
         - run: make lint
