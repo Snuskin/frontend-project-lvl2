@@ -6,7 +6,7 @@ lint:
 	npx eslint .
 install:
 	npm ci
-	nmp link
+	npm link
 test: 
 	npm test
 test-watch:
