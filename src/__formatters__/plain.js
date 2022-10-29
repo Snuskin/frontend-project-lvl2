@@ -4,9 +4,9 @@ const stringify = (data) => {
 
     if (_.isObject(data)) {
     
-      return `[complex value]`;
+      return '[complex value]';
     } 
-    return _.isString(data) ? String(data) : data;
+    return _.isString(data) ? `'${data}'` : data;
 };
 
 const plain = (diff) => {
