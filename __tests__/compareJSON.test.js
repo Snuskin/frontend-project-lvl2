@@ -1,12 +1,12 @@
-import genDiff from '../src/index.js';
+import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { readFileSync } from 'fs';
+import genDiff from '../src/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
-const readFile = (filename) => readFileSync((getFixturePath(filename)), 'utf8')
+const readFile = (filename) => readFileSync((getFixturePath(filename)), 'utf8');
 
 const expectedStylish = readFile('compareStylish.txt');
 const expectedPlain = readFile('comparePlain.txt');
@@ -27,7 +27,7 @@ describe('Positives cases', () => {
 
 describe('Negative cases', () => {
   test('Check wrong file extension', () => {
-    const error = new Error(`Unexpected file extension: txt! Supported formats: 'yaml/yml', 'json'`);
+    const error = new Error('Unexpected file extension: txt! Supported formats: \'yaml/yml\', \'json\'');
 
     expect(() => {
       genDiff(getFixturePath('file1-wrong.txt'), getFixturePath('file2-wrong.txt'));

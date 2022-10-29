@@ -7,6 +7,8 @@ lint:
 install:
 	npm ci
 	npm link
+fix: 
+	npx eslint --fix .
 test: 
 	npm test
 test-watch:
