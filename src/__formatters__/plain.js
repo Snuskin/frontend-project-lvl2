@@ -16,13 +16,13 @@ const plain = (diff) => {
     
         switch (node.state) {
           case 'added':
-            return `Property ${path} was added with value ${stringify(node.afterValue)}`;
+            return `Property '${path}' was added with value: ${stringify(node.afterValue)}`;
           case 'deleted':
-            return `Property ${path} was removed`;
+            return `Property '${path}' was removed`;
           case 'notChanged':
             return []; 
           case 'changed':
-            return `Property ${path}  was updated. From ${stringify(node.beforeValue)} to ${stringify(node.afterValue)}`;
+            return `Property '${path}' was updated. From ${stringify(node.beforeValue)} to ${stringify(node.afterValue)}`;
           case 'nested':
             return `${iter(node.children, [path]).join('\n')}`;
           default:
