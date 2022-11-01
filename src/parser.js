@@ -1,9 +1,4 @@
-import { readFileSync } from 'fs';
 import yaml from 'js-yaml';
-import path from 'path';
-
-const getAbsolutePath = (file) => path.resolve(process.cwd(), file);
-const getFileExtname = (file) => path.extname(file).slice(1);
 
 const getContent = (file, extension) => {
   switch (extension) {
@@ -17,11 +12,4 @@ const getContent = (file, extension) => {
   }
 };
 
-const getFileInfo = (file) => {
-  const absolutePath = getAbsolutePath(file);
-  const fileExtname = getFileExtname(file);
-  const fileData = readFileSync(absolutePath, 'utf8');
-  return getContent(fileData, fileExtname);
-};
-
-export default getFileInfo;
+export default getContent;
