@@ -1,15 +1,9 @@
 import yaml from 'js-yaml';
 
-const getContent = (file, extension) => {
-  switch (extension) {
-    case 'json':
-      return JSON.parse(file);
-    case 'yml':
-    case 'yaml':
-      return yaml.load(file);
-    default:
-      throw new Error(`Unexpected file extension: ${extension}! Supported formats: 'yaml/yml', 'json'`);
-  }
+const getContent = {
+  json: JSON.parse,
+  yml: yaml.load,
+  yaml: yaml.load,
 };
 
-export default getContent;
+export default (file, extension) => getContent[extension](file) ?? `Unexpected file extension: ${extension}! Supported formats: 'yaml/yml', 'json'`;
