@@ -11,6 +11,7 @@ const getFileInfo = (file) => {
   const absolutePath = getAbsolutePath(file);
   const fileExtname = getFileExtname(file);
   const fileData = readFileSync(absolutePath, 'utf8');
+  console.log(getContent(fileData, fileExtname));
   return getContent(fileData, fileExtname);
 };
 

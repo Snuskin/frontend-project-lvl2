@@ -6,4 +6,9 @@ const getContent = {
   yaml: yaml.load,
 };
 
-export default (file, extension) => getContent[extension](file) ?? `Unexpected file extension: ${extension}! Supported formats: 'yaml/yml', 'json'`;
+export default (file, extension) => {
+  if (getContent[extension] === undefined) {
+    throw new Error(`Unexpected file extension: ${extension}! Supported formats: 'yaml/yml', 'json'`);
+  }
+  return getContent[extension](file);
+};
