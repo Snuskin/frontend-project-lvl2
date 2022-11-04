@@ -7,7 +7,7 @@ const formatter = {
   json: JSON.stringify,
 };
 export default (data, format) => {
-  if (formatter[format] === undefined) {
+  if (!formatter[format]) {
     throw new Error(`Invalid file format type: '.${format}'! Try supported file formats.`);
   }
   return formatter[format](data);

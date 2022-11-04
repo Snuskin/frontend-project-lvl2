@@ -7,7 +7,7 @@ const getContent = {
 };
 
 export default (file, extension) => {
-  if (getContent[extension] === undefined) {
+  if (!getContent[extension]) {
     throw new Error(`Unexpected file extension: ${extension}! Supported formats: 'yaml/yml', 'json'`);
   }
   return getContent[extension](file);
