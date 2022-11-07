@@ -19,6 +19,7 @@ describe('Positives cases', () => {
     const file1 = `${process.cwd()}/__fixtures__/file1.${extension}`;
     const file2 = `${process.cwd()}/__fixtures__/file2.${extension}`;
 
+    expect(genDiff(file1, file2)).toEqual(expectedStylish);
     expect(genDiff(file1, file2, 'stylish')).toEqual(expectedStylish);
     expect(genDiff(file1, file2, 'plain')).toEqual(expectedPlain);
     expect(genDiff(file1, file2, 'json')).toEqual(expectedJson);

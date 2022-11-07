@@ -1,5 +1,8 @@
-### Hexlet tests and linter status:
+# frontend-project-lvl2
 
+### Hexlet tests:
+
+[![Actions Status](https://github.com/Snuskin/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Snuskin/frontend-project-lvl2/actions)
 ### Maintainability Badge:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/075f4378c1ae5b7e37bc/maintainability)](https://codeclimate.com/github/Snuskin/frontend-project-lvl2/maintainability)
